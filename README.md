@@ -59,6 +59,27 @@ Main Page:
   Phone
   Resume(pdf download)
 
-  Projects
-  
+  About Me: Hello! My name is Jason and I enjoy programming computer's at their lowest level. My interest in computer engineering topics started back as a child learning redstone mechanics in Minecraft, and I've pursued computer engineering and software devleopment ever since.
+Fast-forward to today, and I've had the privilege to work with plenty of computers large and small, developing solutions in the lighting industry, and beyond. My main focus these days is building embedded solutions in the film lighting space and have detailed experience in pwm control, microcontrollers and embedded design. I primarily develop on the ESP32, but have experience with other microcontrollers such as the stm8 and stm32.
 
+I have many interests and in my personal time enjoy exploring computing topics outside of what I use in a typical workday, including linux configuration with Arch, the Rust programming language, and open source projects(that's not really true yet). Even building this site with React.js and Gatsby.js
+
+Where I've worked:
+Better Way Lighting
+  Oct 2019 - Present
+  Develop embedded products for the film lighting industry using a diverse array of products and technologies
+  Debug issues related to embedded development involving debuggers, 
+  Extensive use of FreeRTOS to design applications
+  Use software design principles to develop performant, extendable and agile application designs
+
+Sierra Wireless: Software Developer Co-op
+  idk look at my resume...
+
+ACL Services: Co-op
+
+Some Things I've Built
+  Lightup basketball hoop with shot detection
+  This website
+  Finish some other projects to put here...  
+
+  See my project Stories for more details and see how I solve engineering problems
