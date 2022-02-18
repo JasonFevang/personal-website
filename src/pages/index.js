@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import { tab, mainDiv, code, title, p, opener, basicText } from './index.module.css'
+import { orangeText, offWhiteText, aquaText, greenText, yellowText, tab, mainDiv, code, subtitle, title, p, opener, basicText } from './index.module.css'
 
 const IndexPage = () => {
   return (
@@ -27,20 +27,32 @@ const IndexPage = () => {
         </ul>
       </nav>
       <main>
-        <code>#include &lt;stdio.h&gt;</code>
+        <code>
+          <span className={aquaText}>#include </span> 
+          <span className={greenText}>&lt;stdio.h&gt;</span></code>
         <br></br>
         <br></br>
-        <code>int main()&#123;</code>
+        <code>
+          <span className={yellowText}>int </span> 
+          <span className={offWhiteText}>main()&#123;</span>
+        </code>
+
         <br></br>
-        <code className={tab}>printf("</code>
+        <code className={tab}>
+          <span className={offWhiteText}>printf(</span>
+          <span className={greenText}>"</span>
+        </code>
         <span className={title}>
           Hi, I'm Jason Fevang
         </span>
-        <code>");</code>
+        <code className={orangeText}>\n</code>
+        <code className={greenText}>"</code>
+        <code className={offWhiteText}>);</code>
         <br></br>
-        <code>&#125;</code>
-        <p className={opener}>I program small computers.</p>
-        <p className={basicText}>I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
+
+        <code className={offWhiteText}>&#125;</code>
+        <p className={opener}>&gt; I program small computers</p>
+        <p className={basicText}><code>jason@fevang.ca:~$</code> I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
         <p>Check out my latest project!</p>
         <Link to="/">
           Hacking the stm8

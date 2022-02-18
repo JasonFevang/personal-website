@@ -1,3 +1,31 @@
+
+/*
+// aqua: #8ec07c
+// green #b8bb26
+// yellow: #fabd2f
+// white: #ebdbb2 
+*/
+
+.orange-text {
+  color: #fe801950;
+}
+
+.off-white-text {
+  color: #ebdbb250;
+}
+
+.aqua-text {
+  color: #8ec07c50;
+}
+
+.green-text {
+  color: #b8bb2650;
+}
+
+.yellow-text {
+  color: #fabd2f50;
+}
+
 body {
   background-color: #282828;
 }
@@ -20,14 +48,23 @@ main {
 }
 
 code {
-  color: #ffffff30;
   font-size: 16px;
   text-align: left;
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
+.subtitle {
+  color: #b8bb26;
+  font-size: 50px;
+  text-align: left;
+  font-family: sans-serif;
+  vertical-align: -12px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .title {
-  color: white;
+  color: #ebdbb2;
   font-size: 50px;
   text-align: left;
   font-family: sans-serif;
