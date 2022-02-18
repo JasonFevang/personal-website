@@ -9,7 +9,7 @@ Projects: Blog format, contains titles and beginning of content with a picture
 I want something with pizazz that shows that I made this site myself:
 - pcb traces that have moving, reactive electricity flowing through them. Either reactive to as you navigate the page, or on page load. When you mouse over a button, there's an electricity pulse that radiates from the button you hovered. Then pressing it has another animation. That'd be hella dope
 - Something about assembly, like JMP instructions to jump to various parts of the page
-- Create my entire page like a piece of assembly code. Sections of the site are various labels. 
+- Create my entire page like a piece of assembly code. Sections of the site are various labels.
 - Have separate pages of my site be like separate .asm or .c/.h files
 - Have a page of my website like C code, with the content of my site packaged in structs and things. 
 - Do something with 3d.js and have a part of the website work in 3d?
@@ -83,3 +83,5 @@ Some Things I've Built
   Finish some other projects to put here...  
 
   See my project Stories for more details and see how I solve engineering problems
+
+NavBar tutorial: https://javascript.plainenglish.io/get-yourself-a-sweet-react-navbar-853d5fb2de52

@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import { tab, mainDiv, code, title, p, opener, basicText } from './index.module.css'
 
 const IndexPage = () => {
   return (
-    <div>
+    <div className={mainDiv}>
       <title>Jason Fevang</title>
       <nav>
         <ul>
@@ -26,14 +27,20 @@ const IndexPage = () => {
         </ul>
       </nav>
       <main>
-        <pre>
-          #include "stdio.h"
-          int main()&#123;
-          printf("Hi! My name is Jason Fevang");
-        </pre>
-        <p>Hi, my name&apos;s Jason Fevang</p>
-        <p>I program small computers.</p>
-        <p>I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
+        <code>#include &lt;stdio.h&gt;</code>
+        <br></br>
+        <br></br>
+        <code>int main()&#123;</code>
+        <br></br>
+        <code className={tab}>printf("</code>
+        <span className={title}>
+          Hi, I'm Jason Fevang
+        </span>
+        <code>");</code>
+        <br></br>
+        <code>&#125;</code>
+        <p className={opener}>I program small computers.</p>
+        <p className={basicText}>I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
         <p>Check out my latest project!</p>
         <Link to="/">
           Hacking the stm8
