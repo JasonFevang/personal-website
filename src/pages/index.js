@@ -7,25 +7,6 @@ const IndexPage = () => {
   return (
     <div className={mainDiv}>
       <title>Jason Fevang</title>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/blog">
-              Blog
-            </Link>
-          </li>
-        </ul>
-      </nav>
       <main>
         <code>
           <span className={aquaText}>#include </span> 
@@ -51,6 +32,33 @@ const IndexPage = () => {
         <br></br>
 
         <code className={offWhiteText}>&#125;</code>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog">
+                Blog
+              </Link>
+            </li>
+          </ul>
+        </nav>
         <p className={opener}>&gt; I program small computers</p>
         <p className={basicText}><code>jason@fevang.ca:~$</code> I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
         <p>Check out my latest project!</p>
