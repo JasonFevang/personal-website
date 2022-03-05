@@ -85,3 +85,14 @@ Some Things I've Built
   See my project Stories for more details and see how I solve engineering problems
 
 NavBar tutorial: https://javascript.plainenglish.io/get-yourself-a-sweet-react-navbar-853d5fb2de52
+
+Types of colored text:
+  - Titles: White
+  - Links/bullets: Orange
+  - Regular text: yellow-white
+
+Greater than symbol:
+&gt; 
+
+Install vim languge plugin for jsx so I'm not killing myself typing this stuff out...
+https://github.com/MaxMEllon/vim-jsx-pretty

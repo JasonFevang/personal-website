@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import { orangeText, offWhiteText, aquaText, greenText, yellowText, tab, mainDiv, code, subtitle, title, p, opener, basicText } from './index.module.css'
+import { offWhiteText, highlightText, orangeTextTrans, offWhiteTextTrans, aquaTextTrans, greenTextTrans, yellowTextTrans, tab, mainDiv, code, subtitle, title, p, opener, basicText } from './index.module.css'
 
 const IndexPage = () => {
   return (
@@ -9,65 +9,41 @@ const IndexPage = () => {
       <title>Jason Fevang</title>
       <main>
         <code>
-          <span className={aquaText}>#include </span> 
-          <span className={greenText}>&lt;stdio.h&gt;</span></code>
+          <span className={aquaTextTrans}>#include </span> 
+          <span className={greenTextTrans}>&lt;stdio.h&gt;</span></code>
         <br></br>
         <br></br>
         <code>
-          <span className={yellowText}>int </span> 
-          <span className={offWhiteText}>main()&#123;</span>
+          <span className={yellowTextTrans}>int </span> 
+          <span className={offWhiteTextTrans}>main()&#123;</span>
         </code>
 
         <br></br>
         <code className={tab}>
-          <span className={offWhiteText}>printf(</span>
-          <span className={greenText}>"</span>
+          <span className={offWhiteTextTrans}>printf(</span>
+          <span className={greenTextTrans}>"</span>
         </code>
         <span className={title}>
-          Hi, I'm Jason Fevang
+          <span className={offWhiteText}>Hi,</span> I'm Jason Fevang
         </span>
-        <code className={orangeText}>\n</code>
-        <code className={greenText}>"</code>
-        <code className={offWhiteText}>);</code>
+        <code className={orangeTextTrans}>\n</code>
+        <code className={greenTextTrans}>"</code>
+        <code className={offWhiteTextTrans}>);</code>
         <br></br>
 
-        <code className={offWhiteText}>&#125;</code>
+        <code className={offWhiteTextTrans}>&#125;</code>
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="/blog">
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <p className={opener}>&gt; I program small computers</p>
-        <p className={basicText}><code>jason@fevang.ca:~$</code> I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
+        <p className={opener}><span className={highlightText}>&gt;</span> I program small computers.</p>
+        <p className={basicText}> I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
         <p>Check out my latest project!</p>
         <Link to="/">
           Hacking the stm8
         </Link>
         <h2>About Me</h2>
         <p>
-          Hello! My name is Jason and I enjoy programming computer&apos;s at their lowest level. My interest in computer engineering topics started back as a child learning redstone mechanics in Minecraft, and I&apos;ve pursued computer engineering and software devleopment ever since.
+          Hello! My name is Jason and I enjoy programming computer&apos;s at their lowest level. My interest in computer engineering topics started back as a child learning redstone mechanics in Minecraft, and I&apos;ve pursued computer engineering and software devleopment ever since. Ever since beginning my degree I've been enamoured with programming in resource constrained environments. The challenge of being limited by computing resources or power usage motivates me.
         </p>
         <p>
           Fast-forward to today, and I&apos;ve had the privilege to work with plenty of computers large and small, developing solutions in the lighting industry, and beyond. My main focus these days is building embedded solutions in the film lighting space and have detailed experience in pwm control, microcontrollers and embedded design. I primarily develop on the ESP32, but have experience with other microcontrollers such as the stm8 and stm32.
@@ -114,7 +90,27 @@ const IndexPage = () => {
           objectPosition="right top"
         />
         <Link to="/">See more...</Link>
+        <code>jason@fevang.ca:~$</code>
       </main>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog">
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }
