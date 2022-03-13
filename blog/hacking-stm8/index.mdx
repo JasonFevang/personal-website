@@ -8,12 +8,43 @@ hero_image_credit_link: "https://unsplash.com/photos/70W9JJfeDUE"
 ---
 
 
-# The Problem
-## Part 1:
-Stm8's contain a collection of data called option bits, stored in flash(is it flash) memory on the device that dictate general behaviour of the device.
-One such bit is the Read Protect bit, which disables reading out the flash memory. If an stm8 has the Read Protect bit set and you try to read out the flash memory of the device, it will return all zeros.
+
+STM8 microcontrollers are capable, inexepensive, well-documented microcontrollers useful in many scenarios. They have a readout protection(ROP) feature that stops attackers from reading out or partially writing data to the device. Readout protection can prevent attacks such as: 
+ * Reading sensitive data saved on the device
+ * Creating duplicate devices by copying the firmware
+ * Writing a trojan horse into an unused section of memory and executing it
+
+However, this built in readout protection can be subverted with a technique called Voltage Glitching.
+
+Let's take a deep dive into the STM8 bootloader, swim interface, dissassembly, voltage glitching and more to learn how to crack STM8 Read Protection.
+
+# How Does Read Protection Work?
+
+Here is the memory layout of an STM8:
+
+![STM8 Memory Layout](./memory_layout.png)
+
+The option bytes section contains 11 bytes of data to configure various aspects of device operation. The first byte is called the Readout Protection(ROP) Byte. If the first byte is `0xAA`, then Read Protection is enabled.
+
+When the STM8 first boots up, the reset vector is at 0x60000 and from here execution starts. This is where the bootloader is stored in ROM. The bootloader is a piece of code responsible for detecting when a programmer is trying to load an application program onto the STM8.
+
+Here is a the first section of the Activation flowchart of the bootloader.
 
 ![STM8 Bootloader Activation Chart](./bl_activation_chart.png)
+
+The part of interest to us is step 3, "Is ROP active?". Here the Read Protection byte from the option byes is checked. If we could skip this check, then the bootloader would continue on to step 4, even if Read Protection is enabled.
+
+Let's take a look at the exact assembly being executed at this point. The bootloader 
+
+# Voltage Glitching
+
+Voltage glitching aims to cause a microcontroller to malfunction in some way by precisely adjusting the power supplied to it. In this case, I am aiming to cut power to the STM8 for a very short amount of time to cause the it to skip the single instruction in the bootloader responsible for checking the read protection byte.
+
+
+
+contain a collection of data called option bits, stored in flash memory on the device that dictate general behaviour of the device.
+One such bit is the Read Protect bit, which disables reading out the flash memory. If an stm8 has the Read Protect bit set and you try to read out the flash memory of the device, it will return all zeros.
+
 
 Interestingly, if you try to read out more memory than the device even has, it will simply keep providing zeros for the requested length.
 You can however write to the device still. However if you try to unset the read protect bit with the intention of then performing a read of the flash, it will also return all zeros, because unsetting the read protect bit also necessarily overwrites the flash with zeros permanantly.
