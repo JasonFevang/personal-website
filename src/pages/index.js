@@ -36,19 +36,6 @@ const IndexPage = () => {
       <title>Jason Fevang</title>
       <main>
         <Hero></Hero>
-        <p className={basicText}> 
-          I'm an embedded developer with experience with Espressif and STM 
-          microcontrollers. Currently, I'm focused on developing custom 
-          lighting solutions adapted to the film industry in Vancouver at 
-          Better Way Lighting.
-        </p>
-
-        <p>
-          Check out my latest project!
-        </p>
-        <Link className={internalLink} to="/">
-          Hacking the stm8
-        </Link>
 
         <h2>About Me</h2>
         <p>
