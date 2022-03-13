@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { titleDiv, projectPeekDiv, internalLink, basicText, heroDiv, offWhiteText, highlightText, orangeTextTrans, offWhiteTextTrans, aquaTextTrans, greenTextTrans, yellowTextTrans, tab, mainDiv, code, title 
+import { titleDiv, projectPeekDiv, internalLink, heroDiv, offWhiteText, highlightText, orangeTextTrans, offWhiteTextTrans, aquaTextTrans, greenTextTrans, yellowTextTrans, tab, mainDiv, code, title 
 } from './hero.module.css'
 
 
@@ -33,7 +33,7 @@ const Hero = () => {
         <code className={offWhiteTextTrans}>&#125;</code>
       </div>
 
-      <p className={basicText}> 
+      <p> 
         I'm an embedded developer with experience with Espressif and STM 
         microcontrollers. Currently, I'm focused on developing custom 
         lighting solutions adapted to the film industry in Vancouver at 

@@ -29,8 +29,10 @@
   color: #fe8019;
 }
 
-.basic-text {
+p {
   color: #ebdbb2;
+  letter-spacing: .05em;
+  line-height: 160%;
   text-align: left;
   font-family: sans-serif;
 }
