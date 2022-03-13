@@ -10,6 +10,14 @@ h1{
   color: white;
 }
 
+li{
+  color: #ebdbb2;
+}
+
+.internal-link {
+  color: #fe8019;
+}
+
 h2{
   color: white;
 }

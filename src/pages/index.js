@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-import { offWhiteText, highlightText, orangeTextTrans, offWhiteTextTrans, aquaTextTrans, greenTextTrans, yellowTextTrans, tab, mainDiv, code, subtitle, title, p, opener, basicText } from './index.module.css'
+import { internalLink, offWhiteText, highlightText, orangeTextTrans, offWhiteTextTrans, aquaTextTrans, greenTextTrans, yellowTextTrans, tab, mainDiv, code, subtitle, title, p, opener, basicText } from './index.module.css'
 
 const IndexPage = () => {
   return (
@@ -38,7 +38,7 @@ const IndexPage = () => {
         <p className={opener}><span className={highlightText}>&gt;</span> I program small computers.</p>
         <p className={basicText}> I&apos;m an embedded developer with experience with Espressif and STM microcontrollers. Currently, I&apos;m focused on developing custom lighting solutions adapted to the film industry in Vancouver at Better Way Lighting.</p>
         <p>Check out my latest project!</p>
-        <Link to="/">
+        <Link className={internalLink} to="/">
           Hacking the stm8
         </Link>
         <h2>About Me</h2>
@@ -79,7 +79,7 @@ const IndexPage = () => {
           object-fit="scale-down"
           objectPosition="right top"
         />
-        <Link to="/">See more...</Link>
+        <Link className={internalLink} to="/">See more...</Link>
         <h3>This Website</h3>
         <p>Modern static website developed with Gastby.js, a static website framework built on React.js. As an embedded software engineer I had plenty to learn developing a modern web app</p>
         <StaticImage
@@ -89,23 +89,23 @@ const IndexPage = () => {
           object-fit="scale-down"
           objectPosition="right top"
         />
-        <Link to="/">See more...</Link>
+        <Link className={internalLink} to="/">See more...</Link>
         <code>jason@fevang.ca:~$</code>
       </main>
       <nav>
         <ul>
           <li>
-            <Link to="/">
+            <Link className={internalLink} to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about">
+            <Link className={internalLink} to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link to="/blog">
+            <Link className={internalLink} to="/blog">
               Blog
             </Link>
           </li>
