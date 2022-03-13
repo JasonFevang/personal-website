@@ -96,3 +96,8 @@ Greater than symbol:
 
 Install vim languge plugin for jsx so I'm not killing myself typing this stuff out...
 https://github.com/MaxMEllon/vim-jsx-pretty
+
+Create custom bullet icon, "orange >"
+  ul {
+    list-style-image: url(‘images/sample-bullet.png’);
+  }

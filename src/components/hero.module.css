@@ -1,0 +1,60 @@
+/*
+// aqua: #8ec07c
+// green #b8bb26
+// yellow: #fabd2f
+// white: #ebdbb2 
+*/
+
+.hero-div {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.highlight-text {
+  color: #fe8019;
+}
+
+.off-white-text {
+  color: #ebdbb2;
+}
+
+.orange-text-50-trans {
+  color: #fe801950;
+}
+
+.off-white-text-trans {
+  color: #ebdbb250;
+}
+
+.aqua-text-trans {
+  color: #8ec07c50;
+}
+
+.green-text-trans {
+  color: #b8bb2650;
+}
+
+.yellow-text-trans {
+  color: #fabd2f50;
+}
+
+.tab{
+  margin-left: 4ch; /*ch specifies the width of the glyph '0'*/
+}
+
+code {
+  font-size: 16px;
+  text-align: left;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: left;
+  font-family: sans-serif;
+  vertical-align: -12px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
