@@ -34,10 +34,9 @@ const Hero = () => {
       </div>
 
       <p> 
-        I'm an embedded developer with experience with Espressif and STM 
-        microcontrollers. Currently, I'm focused on developing custom 
-        lighting solutions adapted to the film industry in Vancouver at 
-        Better Way Lighting.
+        I'm an embedded developer experienced with Espressif and STM 
+        microcontrollers. Currently I'm focused on developing custom 
+        lighting solutions for the film industry in Vancouver.
       </p>
 
       <div className={projectPeekDiv}>
